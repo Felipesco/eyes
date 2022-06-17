@@ -26,6 +26,14 @@ Lista de tarefas:
   - [ ] Tabela de alvos;
   - [ ] Tabela de Vulnerabilidades;
   - [ ] Tabela de Categorias para as vulnerabilidades (XSS, SQLi, LFI...);
+  - [X] Modelagem do Banco de Dados
+
+---
+
+Modelagem do Banco de Dados, Feito no <a href="https://www.sis4.com/brModelo/">brModelo</a>
+
+<img width="75%" height="75%" src="https://github.com/Felipesco/eyes/blob/main/2022-06-17_20-48.png" />
+<p align="center">Arquivo: <a href="https://github.com/Felipesco/eyes/blob/main/modelo-bdEyes.brM3">modelo-bdEyes.brM3</a></p>
 
 ---
 
