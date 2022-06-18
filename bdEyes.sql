@@ -20,3 +20,13 @@ CREATE TABLE tbAlvo(
     , idVuln INT NOT NULL
     , FOREIGN KEY(idVuln) REFERENCES tbVuln(idVuln)
 );
+
+CREATE TABLE tbUser(
+	idUser INT PRIMARY KEY AUTO_INCREMENT
+    , nomeUser VARCHAR(80) NOT NULL
+    , emailUser VARCHAR(100) NOT NULL
+    , senhaUser VARCHAR(32) NOT NULL
+    , telefoneUser VARCHAR(14)
+    , idAlvo INT
+    , FOREIGN KEY(idAlvo) REFERENCES tbAlvo(idAlvo)
+);
