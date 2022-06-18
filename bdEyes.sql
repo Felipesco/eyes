@@ -17,7 +17,7 @@ CREATE TABLE tbAlvo(
     , nomeAlvo VARCHAR(100) NOT NULL
     , descricaoAlvo VARCHAR(200)
     , urlAlvo VARCHAR(200) NOT NULL 
-    , idVuln INT NOT NULL
+    , idVuln INT
     , FOREIGN KEY(idVuln) REFERENCES tbVuln(idVuln)
 );
 
@@ -30,3 +30,12 @@ CREATE TABLE tbUser(
     , idAlvo INT
     , FOREIGN KEY(idAlvo) REFERENCES tbAlvo(idAlvo)
 );
+
+INSERT INTO tbUser values(
+    null
+    , 'Teste'
+    , 'teste@teste.com'
+    , 'teste123'
+    , null
+    , null
+)
