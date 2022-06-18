@@ -11,7 +11,16 @@
 </head>
 <body>
     
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                Login
+            </div>
+            <div class="col-sm">
+                Cadastro
+            </div>
+        </div>
+    </div>
 
 
 
