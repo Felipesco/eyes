@@ -61,7 +61,10 @@
                         </label>
                         <input class="form-control" placeholder="123456789" type="number" name="telefoneUser" id="telefoneUser">
                     </div>
-                        <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn" style="background-color: 	#008000; color: #ffffff;" >Cadastrar</button>
+                        <button type="reset" class="btn" style="background-color: red; color: #ffffff; margin-left: 5%;">Limpar</button>
+                    </div>
                 </form>
             </div>
         </div>
