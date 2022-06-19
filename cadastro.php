@@ -6,12 +6,11 @@ $emailUser = $_POST['emailUser'];
 $senhaUser = MD5($_POST['senhaUser']);
 $telefoneUser = $_POST['telefoneUser']; 
 
-# Mensagem de Erro
-# Error: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
-
 try{
-    $stmt = $pdo->prepare("insert into tbUser values(
-        null,'$nomeUser','$emailUser','$senhaUser','$telefoneUser', null, null
+    $stmt = $pdo->prepare("
+        insert into tbUser(nomeUser, emailUser, senhaUser, telefoneUser)
+        values(
+        '$nomeUser','$emailUser','$senhaUser','$telefoneUser'
     )");
     $stmt->execute();
 }
