@@ -30,7 +30,7 @@
     <div class="container-fluid" style="margin-top: 2%;">
         <div class="row justify-content-around">
             <div class="col-4">
-            <form method="POST" action="login.php" onsubmit="return valida_form_login(this)">
+            <form method="POST" action="login.php">
                     <div class="form-group row" >
                         <label for="formGroupExampleInput">
                             E-mail
@@ -52,26 +52,26 @@
                 </form>
             </div>
             <div class="col-4">
-                <form method="POST" action="cadastro.php" onsubmit="return valida_form_cadastro(this)">
+                <form method="POST" action="cadastro.php">
                     <div class="form-group row" >
                         <label for="formGroupExampleInput">
                             Nome
                         </label>
-                        <input class="form-control" placeholder="Nome" type="text" name="nomeUser" id="nomeUser">
+                        <input class="form-control" placeholder="Nome" type="text" name="nomeUser" id="nomeUser" required>
                     </div>
 
                     <div class="form-group row" >
                         <label for="formGroupExampleInput">
                             E-mail
                         </label>
-                        <input class="form-control" placeholder="exemplo@exemplo.com" type="email" name="emailUser" id="emailUser">
+                        <input class="form-control" placeholder="exemplo@exemplo.com" type="email" name="emailUser" id="emailUser" required>
                     </div>
 
                     <div class="form-group row" >
                         <label for="formGroupExampleInput">
                             Senha
                         </label>
-                        <input class="form-control" type="password" name="senhaUser" id="senhaUser">
+                        <input class="form-control" type="password" name="senhaUser" id="senhaUser" required>
                     </div>
 
                     <div class="form-group row" >
@@ -90,34 +90,6 @@
     </div>
 
 
-
-
-
-    <script language='javascript' type='text/javascript'> 
-        function valida_form_cadastro(){
-            if (document.getElementById("emailUser").value == ""){
-                alert('Preencha o campo de E-mail')
-            }
-            else if (document.getElementById("senhaUser").value == ""){
-                alert('Preencha o campo de Senha')
-            }
-            else if (document.getElementById("senhaUser").value.length < 3 ){
-                alert('Senha Muito Fraca \nEscolha uma senha com no minímo 4 caracteres')
-            }
-        }
-
-        function valida_form_login(){
-            if (document.getElementById("emailUser").value == ""){
-                alert('Preencha o campo de E-mail')
-            }
-            else if (document.getElementById("senhaUser").value == ""){
-                alert('Preencha o campo de Senha')
-            }
-            else if (document.getElementById("senhaUser").value.length < 3 ){
-                alert('Senha Muito Fraca \nEscolha uma senha com no minímo 4 caracteres')
-            }
-        }
-    </script>
 
     <!--Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
