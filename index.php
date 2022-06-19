@@ -35,14 +35,14 @@
                         <label for="formGroupExampleInput">
                             E-mail
                         </label>
-                        <input class="form-control" placeholder="exemplo@exemplo.com" type="email" name="emailUser" id="emailUser">
+                        <input class="form-control" placeholder="exemplo@exemplo.com" type="email" name="emailUser" id="emailUser" required>
                     </div>
 
                     <div class="form-group row" >
                         <label for="formGroupExampleInput">
                             Senha
                         </label>
-                        <input class="form-control" type="password" name="senhaUser" id="senhaUser">
+                        <input class="form-control" type="password" name="senhaUser" id="senhaUser" required>
                     </div>
 
                     <div class="row justify-content-center">
